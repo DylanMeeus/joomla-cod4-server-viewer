@@ -1,0 +1,87 @@
+<?xml version="1.7" encoding="utf-8"?>
+<extension
+	type="module" 
+	version="1.7.0" 
+	client="site" 
+	method="upgrade">
+    <name>CoD 4, server status</name>
+    <author>Stjepan Osojnički</author>
+	<creationDate>24.12.2011</creationDate>
+	<copyright>All rights reserved by Stjepan Osojnički 2011.</copyright>
+	<license>GPL 2.0</license>
+	<authorEmail>sosojni@hotmail.com</authorEmail>
+	<authorUrl>stjepan.c-t-n.org</authorUrl>
+    <version>1.7.0</version>
+    <description>Modul that shows current Call of Duty 4 server status. Information provided by http://battletracker.com/ and http://www.gametracker.com/</description>
+    <files>
+        <filename>mod_cod4_serverstatus.xml</filename>
+        <filename module="mod_cod4_serverstatus">mod_cod4_serverstatus.php</filename>
+        <filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/horizontal.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/vertical.php</filename>
+		<filename>css/index.html</filename>
+		<filename>css/default.css</filename>
+		<filename>css/horizontal.css</filename>
+		<filename>css/vertical.css</filename>
+    </files>
+	<media folder="/images/" destination="../images/serverstats">
+        <filename>mp_backlot.jpg</filename>
+		<filename>mp_bloc.jpg</filename>
+		<filename>mp_bog.jpg</filename>
+		<filename>mp_broadcast.jpg</filename>
+		<filename>mp_carentan.jpg</filename>
+		<filename>mp_cargoship.jpg</filename>
+		<filename>mp_citystreets.jpg</filename>
+		<filename>mp_convoy.jpg</filename>
+		<filename>mp_countdown.jpg</filename>
+		<filename>mp_crash.jpg</filename>
+		<filename>mp_crash_snow.jpg</filename>
+		<filename>mp_creek.jpg</filename>
+		<filename>mp_crossfire.jpg</filename>
+		<filename>mp_farm.jpg</filename>
+		<filename>mp_killhouse.jpg</filename>
+		<filename>mp_overgrown.jpg</filename>
+		<filename>mp_pipeline.jpg</filename>
+		<filename>mp_shipment.jpg</filename>
+		<filename>mp_showdown.jpg</filename>
+		<filename>mp_strike.jpg</filename>
+		<filename>mp_vacant.jpg</filename>
+		<filename>none.jpg</filename>
+		<filename>index.html</filename>
+    </media>
+    <config>
+    	<fields name="params">
+			<fieldset name="basic">
+				<field name="server_name" type="text" default="" label="Server name" description="Use this option to change server name on your site. If you leave this empty, module will use server name from Battletracker" size="50" />
+				<field name="server_name_link" type="text" default="" label="Server name link" description="Use this option to create link from your sarver name. For example: http:www.yourclanhomepage.com. Link caption will not change. If you leave this empty, server name will be normal text. " size="50" />
+				<field name="server_ip_link" type="text" default="" label="Server IP link" description="Use this option to create link from your sarver IP. For example: http:www.yourserverprivatestatistics.com. Link caption will not change. If you leave this empty, server IP will be normal text. " size="50" />
+				<field name="server_ip" type="text" default="82.193.200.166" label="Server IP" description="Enter your Call of Duty 4 server IP without port." />
+				<field name="server_port" type="text" default="28960" label="Server port" description="Enter your Call of Duty 4 server port, without IP (default: 28960)." />
+				<field name="player_stats_link" type="list" default="1" label="Link players" description="Do you wish to create link for each player to Battletracker player stats?">
+			  		<option value="0">No</option>
+			  		<option value="1">Yes</option>
+				</field>
+				<field name="gametracker_server_banner" type="list" default="1" label="Server banner" description="Do you wish to show gametracker.com server banner?">
+			  		<option value="0">No</option>
+			  		<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

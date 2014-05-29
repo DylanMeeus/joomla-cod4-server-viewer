@@ -1,0 +1,57 @@
+.cod4serverstatus_holder
+{
+	float:left;
+	width: 100%;
+}
+.cod4serverstatus_padding
+{
+    padding-right: 5px;
+}
+.cod4serverstatus_holder p
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.cod4serverstatus_left
+{
+	float:left;
+	width:49%;
+	padding-right:1%;
+}
+.cod4serverstatus_right
+{
+	float: right;
+    height: 215px;
+    overflow: auto;
+    padding-left: 1%;
+    width: 49%;
+}
+.cod4serverstatus_banner
+{
+	float:left;
+	clear:both;
+	padding-top:5px;
+}
+.cod4serverstatus_player
+{
+	float: left;
+    width: 49%;
+    overflow:hidden;
+    height:1.5em;
+    margin-right:1%;
+
+}
+.cod4serverstatus_ping
+{
+	float: left;
+    width: 25%;
+    overflow:hidden;
+    height:1.5em;
+}
+.cod4serverstatus_score
+{
+	float: left;
+    width: 25%;
+    overflow:hidden;
+    height:1.5em;
+}

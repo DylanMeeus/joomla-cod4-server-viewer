@@ -1,0 +1,30 @@
+.cod4serverstatus_left
+{
+	float:left;
+	clear:both;
+	padding:5px;
+	width:170px;
+}
+.cod4serverstatus_player
+{
+	float: left;
+    width: 80px;
+    overflow:hidden;
+    height:1.5em;
+    margin-right:5px;
+
+}
+.cod4serverstatus_ping
+{
+	float: left;
+    width: 28px;
+    overflow:hidden;
+    height:1.5em;
+}
+.cod4serverstatus_score
+{
+	float: left;
+    width: 32px;
+    overflow:hidden;
+    height:1.5em;
+}
