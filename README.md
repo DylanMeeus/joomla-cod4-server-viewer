@@ -1,4 +1,4 @@
-razor-ts-server-viewer
+razor-cod4-server-viewer
 ======================
 
-Joomla module that enables you to display your TS3 server data (status, channels, visitors etc.)
+Joomla module that enables you to display your CoD4 server data (status, players, score etc.)
